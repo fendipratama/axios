@@ -5,14 +5,15 @@ const config = {
 
 const vm = new Vue({
     el: '#app',
-    data: {
-        results : []
+    data() {
+        return{
+            results : null
+        }
     },
     mounted(){
         axios.get(url, config)
-        .then(function(response){
-            this.results = response.data;
-            console.log(response.data[0]);
-        });
+        .then(response => (
+            this.results = response.data[0]
+        ));
     }
   });
