@@ -16,8 +16,19 @@
             <li v-for="result in results">
                 Positif : {{ result.positif }}
             </li>
+            <li v-for="result in results">
+                Sembuh : {{ result.sembuh }}
+            </li>
+            <li v-for="result in results">
+                Meninggal : {{ result.meninggal }}
+            </li>
+            <li v-for="result in results">
+                Dirawat : {{ result.dirawat }}
+            </li>
+
+            <br />
             <p v-for="result in results">
-                {{ result }}
+                result : {{ result }}
             </p>
         </ul>
         </div>
