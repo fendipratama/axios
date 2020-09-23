@@ -13,7 +13,7 @@ const vm = new Vue({
     mounted(){
         axios.get(url, config)
         .then(response => (
-            this.results = response.data[0]
+            this.results = response.data
         ));
     }
   });

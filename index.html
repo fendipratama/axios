@@ -10,9 +10,15 @@
         <div class="container">
         <h3>Display Data From An API</h3>
         <ul id="app">
-            <li v-for="(result, index) in results">
-                {{ results }}
+            <li v-for="result in results">
+                Negara : {{ result.name }}
             </li>
+            <li v-for="result in results">
+                Positif : {{ result.positif }}
+            </li>
+            <p v-for="result in results">
+                {{ result }}
+            </p>
         </ul>
         </div>
         <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
