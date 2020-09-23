@@ -15,5 +15,6 @@ const vm = new Vue({
         .then(response => (
             this.results = response.data
         ));
+        //console.log(response);
     }
   });
